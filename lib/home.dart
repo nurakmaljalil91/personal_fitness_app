@@ -19,7 +19,8 @@ class HomeScreen extends StatelessWidget {
             RaisedButton(
               child: Text('Go to Plan'),
               onPressed: () {
-                Navigator.of(context).pushNamed('/addPlanScreen');
+                Navigator.of(context).pushNamed('/addPlanScreen',
+                    arguments: 'Hello There from first page');
               },
             )
           ],
