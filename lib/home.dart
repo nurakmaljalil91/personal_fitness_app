@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './add_plan.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -8,7 +9,21 @@ class HomeScreen extends StatelessWidget {
         title: Text('Personal Fitness App'),
       ),
       body: Center(
-        child: Text('Hello Flutter'),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            Text(
+              'Home Screen',
+              style: TextStyle(fontSize: 50),
+            ),
+            RaisedButton(
+              child: Text('Go to Plan'),
+              onPressed: () {
+                Navigator.of(context).pushNamed('/addPlanScreen');
+              },
+            )
+          ],
+        ),
       ),
     );
   }
