@@ -26,7 +26,7 @@ class _NavState extends State<Nav> {
       ),
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Colors.white,
-        color: Colors.purple[900],
+        color: Colors.teal[800],
         items: <Widget>[
           Icon(
             Icons.verified_user,
@@ -44,15 +44,13 @@ class _NavState extends State<Nav> {
             color: Colors.white,
           ),
         ],
+        index: 1,
         animationDuration: Duration(milliseconds: 200),
         animationCurve: Curves.bounceInOut,
         onTap: (index) {
           setState(() {
             _currentIndex = index;
           });
-
-          debugPrint('index is $index');
-          debugPrint('current index is $_currentIndex');
         },
       ),
     );
