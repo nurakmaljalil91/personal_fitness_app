@@ -18,9 +18,6 @@ class _NavState extends State<Nav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Personal Fitness App'),
-      ),
       body: Center(
         child: _widgetOptions.elementAt(_currentIndex),
       ),
